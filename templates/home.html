@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="homecent">
+  <h3>Subreddit Post Recommender</h3>
+  <div class="toright">
+    <h6>This application allows you to find relevant subreddits based on a post entry. After you enter a title and post content, this app vectorizes your post and matches it with to subreddits with similar posts. </h6>
+  </div>
+  <form action="{{url_for('search')}}">
+    <div class="form-group">
+      <input class="form-control mr-sm-2" name="title" type="search" placeholder="Enter a subreddit title" aria-label="Search" style="width:500px">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" name="block" placeholder="Enter the content for a subreddit post" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button class="btn btn-outline-danger" type="submit">Search</button>
+  </form>
+</div>
+{% endblock %}

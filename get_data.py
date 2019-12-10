@@ -1,6 +1,5 @@
 from decouple import config
 import pymongo
-from bson.json_util import dumps
 
 
 def get_subreddit_info(array):
@@ -11,5 +10,5 @@ def get_subreddit_info(array):
     code = config('mongo_code')
     client = pymongo.MongoClient(code)
     db = client.sfw_db
-    data = [dumps(db.sfw_db.find({'sub_id': int(num)})[0]) for num in array]
+    data = [db.sfw_db.find({'sub_id': int(num)})[0] for num in array]
     return(data)

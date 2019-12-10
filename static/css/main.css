@@ -1,0 +1,127 @@
+.homecent{
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.songlist{
+  margin-top: 10;
+}
+.songlist{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 4px;
+  background-color: #f8f9fa;
+  display:inline-block;
+  vertical-align: top;
+}
+.but{
+  margin-bottom: 5x;
+}
+.search{
+  margin-top: 50px;
+}
+.title{
+  text-align: center;
+}
+.recs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.recin{
+  width: 40%;
+}
+.recin2{
+  width: 60%;
+}
+@media only screen and (max-width: 1000px) {
+  .recin{
+    width: 100%;
+  }
+  .recin2{
+    width: 100%;
+  }
+}
+.mid1{
+  padding-left: 5px;
+  width: 25%;
+  display: block;
+  float: right;
+}
+.mid2{
+  width: 75%;
+  display: block;
+  float: left;
+}
+.mid{
+  height: 30px;
+}
+.me{
+  padding-top: 18px;
+  text-align: center;
+  color: white
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+.chart{
+  padding-bottom: 225px;
+}
+.recbutton:hover{
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+.recbutton{
+  background-color: white; /* Green */
+  border: 2px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+.midbut{
+  padding-top: 25px;
+  margin-right: 25px;
+  text-align: center;
+}
+.chartbelow{
+  text-align: center;
+  padding-top: 25px;
+  margin-right: 15px;
+}
+.form-group1 {
+  width: 100%;
+}
+.searchpage{
+  padding-top: 30px;
+}
+.listings{
+  border-style: outset;
+}
+.listinner{
+  padding: 10px;
+}
+.toright{
+  text-align: left;
+}

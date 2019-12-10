@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="searchpage">
+  <h3>Recommended Subreddits</h3>
+</div>
+<br>
+{% for i in res%}
+<div class="listings">
+  <div class="listinner">
+    <h3><a href="{{'https://www.reddit.com' + i['url']}}">{{i['name']}}</a></h3>
+    <h5><b>Description: </b>{{i['description']}}</h5>
+    <h6><b>Subscribers: </b>{{i['subscribers']}}</h6>
+    <h6><b>Active Accounts: </b>{{i['active_accounts']}}</h6>
+  </div>
+</div>
+{%endfor%}
+<br>
+<h3><a href="{{url_for('home')}}">⬅️ Back to search</a></h3>
+{% endblock %}
