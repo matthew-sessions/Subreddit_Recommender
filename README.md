@@ -1,3 +1,5 @@
+#### This app acts as an interface to test the recommendation engine: http://subredditapp.matthewlsessions.com/
+
 ## Post-Here Subreddit Recommender
 
 ### Overview:
